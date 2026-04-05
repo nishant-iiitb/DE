@@ -41,14 +41,15 @@ CREATE TABLE IF NOT EXISTS watch_inventory (
     model TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
----
+```
 
 ## 4. Version Control: GitHub (`nishant-iiitb/DE`)
 Connected the local workstation to the cloud portfolio using secure authentication.
 
 ### **Key Configurations:**
-* **Identity:** * `git config --global user.name "Nishant"`
-  * `git config --global user.email "nishant-iiitb@example.com"`
+* **Identity:** 
+    * `git config --global user.name "Nishant"`
+    * `git config --global user.email "nishant-iiitb@example.com"`
 * **Auth Automation:** `git config --global credential.helper store` (Saves the Personal Access Token for 30 days).
 * **Ignored Files (.gitignore):** Hiding `.venv/`, `__pycache__/`, and `.pyc` from the cloud to maintain repository hygiene.
 
@@ -98,6 +99,7 @@ def load_data():
 if __name__ == "__main__":
     load_data()
 ```
+
 ## 6. Troubleshooting Log (Crucial Fixes)
 
 | Issue | Root Cause | Solution |
